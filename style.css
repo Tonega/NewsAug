@@ -13,7 +13,7 @@ body{
     margin: 0 5%;
 }
 p{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: var(--Dark-grayish-blue);
     margin: 1rem 0;
 }
@@ -36,6 +36,9 @@ nav{
 nav img{
     width: 50px;
 }
+.nav-link{
+    color: var(--Grayish-blue);
+}
 .hero-image :nth-child(1){
     width: 100%;
 }
@@ -43,15 +46,15 @@ nav img{
     display: none;
 }
 .hero-content{
-    background-color: whitesmoke;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     /* height: 35vh; */
 }
-.bright{
-    font-size: 1.8rem;
-    font-weight: 800;
+.bright h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--very-dark-blue);
 }
 .read-more{
     display: flex;
@@ -75,7 +78,7 @@ nav img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 120vh;
+    height: 70vh;
     /* align-items: center; */
 }
 .new h2{
@@ -88,6 +91,17 @@ nav img{
 .new a:hover{
     color: var(--soft-orange);
 }
+a:link{
+    text-decoration: none;
+}
+.new .new-content a{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.new .new-content p{
+    font-size: 1rem;
+    color: var(--Grayish-blue);
+}
 hr{
     opacity: 0.6;
 }
@@ -96,26 +110,34 @@ hr{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 10rem 0;
+    margin: 2rem 0;
 }
 .footer-card img{
     width: 30%;
+    height: 150px;
 }
 .footer-card-content{
     width: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .footer-card-content h1{
     color: var(--grayish-blue);
 }
 .footer-card-content a{
     color: var(--very-dark-blue);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 .footer-card-content a:hover{
     color: var(--soft-red);
 }
 nav ul{
     display: none;
+}
+.nav-link a{
+    color: var(--Dark-grayish-blue);
 }
 /* Media Query */
 @media (min-width: 658px) and (max-width:779px){
@@ -195,15 +217,3 @@ nav ul{
         font-size: 0.8rem;
     }
 }
-
-/* .footer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 4rem;    
-} */
-/* .footer-card{
-    width: 0%;
-    display: flex;
-    justify-content: space-between;
-} */
